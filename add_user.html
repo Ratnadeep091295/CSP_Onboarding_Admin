@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+
+    <title>CSP Onboarding_Admin: Dashboard</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="css/dashboard_style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/theme_style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body id="page-top">
+    <div id="">
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+                <div class="downloadBar">
+                    <ul>
+                        <li class="nav-item no-arrow mx-1" title="Export Rejected User List">
+                            <a class="nav-link export" href="#" id="alertsDropdown" role="button">
+                                <i class="fas fa-download text-danger pr-2"></i> Rejected csp users
+                            </a>
+                        </li>
+                        <li class="nav-item no-arrow mx-1" title="Export Compleated User List">
+                            <a class="nav-link export" href="#" id="alertsDropdown" role="button">
+                                <i class="fas fa-download text-success pr-2"></i>Compleated csp users
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <a class="navbar-brand d-block d-sm-none smallLogo" href="#"><img class="brandLogo"
+                            src="img/paythroughlogoSmall.png" alt="logo" /></a>
+                    <a class="navbar-brand d-none d-sm-block" href="#"><img class="brandLogo"
+                            src="img/paythroughlogo.png" alt="logo" /></a>
+                    <ul class="navbar-nav w-100 justify-content-center">
+                        <li class="nav-item"><a class="nav-link px-4 " href="pending.html">Pending</a></li>
+                        <li class="nav-item"><a class="nav-link px-4 active-tab" href="user.html">User</a></li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+
+                        <form class="form-inline navbar-search" style="visibility: hidden;">
+                            <div class="input-group">
+                                <input type="date" class="form-control">
+                            </div>
+                        </form>
+                        <div class="topbar-divider d-none d-sm-block"></div>
+                        <li class="nav-item pt-3">
+                            <div class="btn-group">
+                                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                                </a>
+                                <ul class="dropdown-menu shadow" aria-labelledby="dropdownMenuLink">
+                                    <li>
+                                        <div class="user_details">
+                                            <div class="formWraper">
+                                                <div class="profileIcon_wraper">
+                                                    <img class="img-profile rounded-circle"
+                                                        src="img/undraw_profile.svg">
+                                                </div>
+                                                <div class="userHead mt-3">
+                                                    <h1 class="details text-center">Sudip Chatterjee</h1>
+                                                    <h6 class="heading text-center">sudip.c@paythrough.in</h6>
+                                                </div>
+                                                <div class="divider mb-3"></div>
+                                                <div class="description">
+                                                    <div class="userDetails">
+                                                        <h6 class="heading">Mobile Number</h6>
+                                                        <h1 class="details">+91 98511 29291</h1>
+                                                    </div>
+                                                    <div class="userDetails">
+                                                        <h6 class="heading">Privilege</h6>
+                                                        <h1 class="details">Admin</h1>
+                                                    </div>
+                                                </div>
+                                                <div class="divider mb-3"></div>
+                                                <button class="btn btn-outline-dark user-change-password" type="button"
+                                                    onclick="location.href ='admin_change_password.html'">Change
+                                                    Password</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item no-arrow mx-1">
+                            <a class="nav-link" href="login.html
+                                " id="alertsDropdown" role="button">
+                                <i class="fas fa-power-off"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container-fluid">
+                <!-- main content -->
+                <div class="userList_header">
+                    <h1 class="">Add New User</h1>
+                </div>
+                <div class="card shadow">
+                        <table class="table">
+                            <thead class="table-head header ">
+                                <tr class="userTableRow">
+                                    <th scope="col">NAME</th>
+                                    <th scope="col">Email ID</th>
+                                    <th scope="col">Mobile Number</th>
+                                    <th scope="col">Privilege</th>
+                                    <th scope="col">Set Password</th>
+                                    <th scope="col">Re-enter Password</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="tableRow addUserTableRow">
+                                    <td class="name align-middle"><input type="text" placeholder="Enter User's Name">
+                                    </td>
+                                    <td class="align-middle email"><input type="text" placeholder="Enter Email Id"></td>
+                                    <td class="align-middle mobile"><input type="number"
+                                            placeholder="Enter Mobile Number"></td>
+                                    <td class="align-middle form-switch">
+                                        <input class="form-check-input toggleCheck" type="checkbox" id="adminCheck">
+                                        <label class="form-check-label" for="adminCheck">Normal Admin</label>
+                                    </td>
+                                    <td class="align-middle"><input type="password"
+                                            placeholder="Set new password"></td>
+                                    <td class="align-middle"><input type="password"
+                                            placeholder="Re-enter new password"></td>
+                                    <td><button type="button" class="btn btn-primary addBtn"><i class="fas fa-user-plus"></i> Add</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                <!-- / main content -->
+            </div>
+            <footer class="sticky-footer">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>&copy; Copyright 2013 - 2021, <a href="https://www.paythrough.in/">Paythrough</a>. All
+                            rights reserved.</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+        $('#adminCheck').click(function () {
+            if ($(this).is(':checked')) {
+                $(this).siblings('label').html('Super Admin');
+            } else {
+                $(this).siblings('label').html('Normal Admin');
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/freeze-table.js"></script>
+    <script src="https://kit.fontawesome.com/7a28902351.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

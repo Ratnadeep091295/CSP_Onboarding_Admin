@@ -1,0 +1,298 @@
+body{
+    background-image:url("../img/profile-01.jpg");
+    background-size: cover;
+    font-size: 14px;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#page-top{
+    height: 100vh;
+    background-color: #f8f9fc !important;
+}
+.table-head{
+    cursor: pointer;
+}
+.table{
+    font-size: 13px;
+}
+.tableRow td:not(.name){
+    padding:0.5rem !important;
+}
+.name{
+    font-weight: bold;
+}
+.statusBtn{
+    font-size: 10px !important;
+}
+
+.castomCard{
+    max-height: 63vh;
+    overflow-y: scroll;
+}
+
+table {
+    text-align: left;
+    position: relative;
+    border-collapse: collapse;
+  }
+  .rejected_table th{
+      background-color:crimson;
+  }
+  .pending_table th{
+    background-color:darkorange;
+}
+.compleated_table th{
+    background-color:forestgreen;
+}
+.userTableRow th{
+    background-color: #4e73df !important;
+}
+th {
+    /* background:#4e73df; */
+    color: #ffffff;
+    position: sticky;
+    text-transform: uppercase;
+    top: 0; /* Don't forget this, required for the stickiness */
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+  }
+
+  .pageNumber{
+      background-color: #f0f0f0;
+      padding: 20px 20px 0 0;
+  }
+  .brandLogo {
+    width: 140px;
+    padding: 0 0 0 18px;
+}
+  .smallLogo img{
+      width: 60px;
+      padding-left: 10px;
+  }
+  .navbar-search{
+      width: 12rem !important;
+  }
+  .page-link{
+      font-size: 13px;
+      color: rgb(71, 71, 71) !important;
+      background-color: transparent !important;
+      border: none !important;
+      transition-duration:0.3s !important;
+  } 
+  .page-link:hover,
+  .page-link:focus,
+  .page-link:active{
+      color: #f0f0f0 !important;
+      background-color: #4e73df !important;
+  }  
+  .active-tab{
+      border-bottom: 2px solid #4e73df;
+      color: #4e73df !important;
+      font-weight: 700;
+      
+  }   
+  
+  .tableRow td{
+      font-weight: 800;
+      text-align: center;
+  }
+
+  .tableRow .name,
+  .tableRow .mobile,
+  .tableRow .email,
+  .tableRow .payId{
+      font-weight: normal;
+      text-align:left;
+  }
+  
+  
+  .tableIcon{
+      padding: 5px 0 0 0  !important;
+      font-size: 15px !important;
+  }
+
+  .dropdown-menu {
+      top: 150% !important;
+    left: -220px !important;
+}
+
+.user_details{
+    width: 300px;
+    padding: 30px 10px;
+}
+
+.formWraper{
+    margin: 0 auto;
+}
+.formWraper .form-control{
+    font-size: 14px;
+    padding: 10px 5px;
+    transition-duration: 0.3s;
+}
+.formWraper .form-control:active,
+.formWraper .form-control:focus{
+    border: none;
+    border: 2px solid darkorange;
+    box-shadow: none;
+}   
+.login{
+    padding: 8px 0;
+}
+.heading{
+    font-size: 12px;
+    color: darkgrey;
+    font-weight: 800;
+    margin-bottom: 0px !important;
+}
+.userHead .heading,
+.userHead .details{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px !important;
+}
+.details{
+    font-size: 14px;
+    color:#2e59d9;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0px !important;
+}
+
+.userDetails,
+.userHead{
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+.divider{
+    width: 100%;
+    float: left;
+    border-bottom: 0.2px solid rgb(224, 224, 224);
+}
+
+.profileIcon_wraper{
+    width: 70px;
+    height: auto;
+    margin: 0 auto;
+}
+.profileIcon_wraper img{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.user-change-password{
+    display: block !important;
+    margin: 0 auto !important;
+    width: 70% !important;
+    font-size: 12px !important;
+}
+.description{
+    padding: 0px 20px ;
+}
+.dropdown-toggle{
+    width: 30px !important;
+    padding: 5px 0 0 0 !important;
+}
+.dropdown-toggle::after {
+            visibility: hidden;
+        }
+
+ .export{
+     font-size: 13px;
+ } 
+ .export:hover{
+     color: peachpuff !important;
+ }
+
+ .userList_header{
+     width: 30%;
+     display: flex;
+     flex-direction: row;
+     justify-content:left;
+ }
+ .userList_header h1{
+     font-size: 20px;
+     color: rgb(58, 58, 58);
+     font-weight: 700;
+
+ }
+
+ .add-button{
+     border: 0.5px dashed blue !important;
+     width: 50px;
+     color:royalblue !important;
+     padding: 0 5px !important;
+     height: 20px !important;
+     margin-left: 30px;
+     margin-top: 7px;
+ }
+ .add-button span{
+     font-size: 15px;
+ }
+
+ .modal button{
+     font-size: 12px;
+ }
+
+ .form-switch .form-check-input{
+     margin-left: -20px !important;
+ }
+ .form-switch .form-check-label{
+     margin-left: 25px !important;
+ }
+
+ .modal-body{
+     height: 400px;
+     overflow-y: auto;
+ }
+
+ .downloadBar{
+     width: 100%;
+     height: 30px;
+     float: left;
+     background: rgb(0, 86, 184);
+ }
+
+ .downloadBar ul{
+     list-style: none;
+     float: right;
+ }
+.downloadBar ul li{
+    display: inline-block;
+}
+.downloadBar ul li a{
+    color: papayawhip;
+}
+.btn,
+.form-control {
+    border-radius: 0px !important;
+}
+.addUserTableRow:hover{
+    background-color: #fff !important;
+}
+.addUserTableRow td input:not(.toggleCheck){
+    border:none;
+    outline: none;
+    background: #fff;
+}
+.addUserTableRow td input:not(.toggleCheck):hover,
+.addUserTableRow td input:not(.toggleCheck):focus,
+.addUserTableRow td input:not(.toggleCheck):active{
+    border:none;
+    outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.addBtn{
+    font-size: 12px !important;
+}
